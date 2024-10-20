@@ -10,9 +10,10 @@
 
 header {
     position: fixed;
-    top: 1rem;
-    left: 50px;
-    /* transform: translatex(-50%); */
+    top: 3rem;
+    left: 50%;
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,14 +29,17 @@ header {
     -o-border-radius: 3rem;
     border-radius: 3rem;
     z-index: 1000;
-
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50);
 }
 
 .logo {
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
-    text-wrap: nowrap;
+    white-space: nowrap;
     -webkit-transition: 0.3 ease-in-out;
     -moz-transition: 0.3 ease-in-out;
     -ms-transition: 0.3 ease-in-out;
@@ -101,7 +105,7 @@ li a:hover::before{
    font-size:1rem;
    color:white;
    cursor:pointer;
-   text-wrap:nowrap;
+   white-space:nowrap;
     -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
         -ms-transition: 0.3s ease;
