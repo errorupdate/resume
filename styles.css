@@ -10,7 +10,7 @@
 
 header {
     position: fixed;
-    top: 3rem;
+    top: 1rem;
     left: 50%;
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
